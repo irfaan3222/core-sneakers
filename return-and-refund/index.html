@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Return & Refund Policy — CORE Footwear</title>
+  <meta name="description" content="Read CORE Footwear's return and refund guidelines, exchange rules, and video verification requirements." />
+  
+  <link rel="icon" type="image/png" href="/assets/og-preview.png" />
+
+  <!-- Open Graph & WhatsApp Sharing Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CORE Footwear">
+  <meta property="og:url" content="https://core-sneakers.vercel.app/return-and-refund">
+  <meta property="og:title" content="Return & Refund Policy — CORE Footwear">
+  <meta property="og:description" content="Read CORE Footwear's return and refund guidelines, exchange rules, and video verification requirements.">
+  <meta property="og:image" content="https://core-sneakers.vercel.app/assets/share_card.jpg">
+  <meta property="og:image:secure_url" content="https://core-sneakers.vercel.app/assets/share_card.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="image_src" href="https://core-sneakers.vercel.app/assets/share_card.jpg">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Return & Refund Policy — CORE Footwear">
+  <meta name="twitter:description" content="Read CORE Footwear's return and refund guidelines, exchange rules, and video verification requirements.">
+  <meta name="twitter:image" content="https://core-sneakers.vercel.app/assets/share_card.jpg">
+
+  <!-- Tailwind CSS (Local Bundle with CDN Fallback) -->
+  <script src="/js/tailwind.js"></script>
+  <script>
+    if (typeof tailwind === 'undefined') {
+      document.write('<script src="https://cdn.tailwindcss.com"><\/script>');
+    }
+  </script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            mono: ['Space Grotesk', 'monospace'],
+            sans: ['Inter', 'sans-serif']
+          },
+          colors: {
+            core: {
+              blue: '#0a0a0a',
+              hover: '#000000',
+              deep: '#0a0a0a',
+              light: '#f5f5f7',
+              ice: '#fafafa',
+              border: '#e5e5e5'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body class="bg-white text-neutral-900 selection:bg-black selection:text-white flex flex-col min-h-screen">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="announcement-bar flex items-center justify-center text-xs font-mono-code font-bold py-2 px-4 text-center">
+    <span>✦ 10% OFF ON PREPAID ORDERS — USE CODE <strong class="underline decoration-white/70">CORE10</strong></span>
+  </div>
+
+  <!-- SITE HEADER / NAVBAR -->
+  <header class="site-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex items-center justify-between">
+      
+      <!-- TOP LEFT: OFFICIAL BRAND LOGO -->
+      <div class="flex items-center gap-3 sm:gap-4">
+        <button id="mobile-menu-btn" class="lg:hidden p-1.5 text-black hover:text-neutral-600 focus:outline-none" aria-label="Toggle navigation menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+
+        <a href="/" class="flex items-center" title="CORE Footwear">
+          <img src="/assets/core-logo-hd.png" alt="CORE" class="brand-logo-img" />
+        </a>
+      </div>
+
+      <!-- CENTER: NAVIGATION LINKS -->
+      <nav class="hidden lg:flex items-center gap-8 text-xs font-display font-bold uppercase tracking-wider text-neutral-800">
+        <a href="/#men-collection-section" class="hover:text-black transition-colors py-1">Men</a>
+        <a href="/#women-collection-section" class="hover:text-black transition-colors py-1">Women</a>
+        <a href="/#shop-by-brand-section" class="hover:text-black transition-colors py-1">Brands</a>
+        <a href="/#archive-drops-section" class="hover:text-black transition-colors py-1">Drops</a>
+        <a href="/#reels-section" class="hover:text-black transition-colors py-1">Lookbook</a>
+      </nav>
+
+      <!-- TOP RIGHT: WHATSAPP DIRECT LINK -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/916238469390?text=Hi%20CORE%20Footwear%20Team%2C%20I%20have%20a%20question%20about%20orders" target="_blank" class="text-xs font-mono-code font-bold text-neutral-800 hover:text-black flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-neutral-300 hover:border-black transition-colors">
+          <span class="w-2 h-2 rounded-full bg-[#25D366]"></span>
+          <span>Support</span> &#x2197;
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Mobile Nav Slide Panel -->
+    <div id="mobile-nav-panel" class="hidden border-t border-neutral-200 bg-white/95 backdrop-blur-md px-6 py-5 space-y-3 font-display font-bold text-sm uppercase">
+      <a href="/#men-collection-section" onclick="closeMobileNav()" class="flex items-center justify-between py-2 text-neutral-800 hover:text-black border-b border-neutral-100">
+        <span>Men's Footwear</span>
+        <span class="text-xs text-black font-mono-code font-bold">SHOP ↗</span>
+      </a>
+      <a href="/#women-collection-section" onclick="closeMobileNav()" class="flex items-center justify-between py-2 text-neutral-800 hover:text-black border-b border-neutral-100">
+        <span>Women's Footwear</span>
+        <span class="text-xs text-black font-mono-code font-bold">SHOP &#x2197;</span>
+      </a>
+      <a href="/#shop-by-brand-section" onclick="closeMobileNav()" class="flex items-center justify-between py-2 text-neutral-800 hover:text-black border-b border-neutral-100">
+        <span>Shop By Brand</span>
+        <span class="text-xs text-black font-mono-code font-bold">BRANDS</span>
+      </a>
+      <a href="/#archive-drops-section" onclick="closeMobileNav()" class="flex items-center justify-between py-2 text-neutral-800 hover:text-black border-b border-neutral-100">
+        <span>New Drops</span>
+        <span class="text-xs text-neutral-400 font-mono-code font-bold">ARCHIVE</span>
+      </a>
+      <a href="/#reels-section" onclick="closeMobileNav()" class="flex items-center justify-between py-2 text-neutral-800 hover:text-black border-b border-neutral-100">
+        <span>Lookbook Stories</span>
+        <span class="text-xs text-black font-mono-code font-bold">REELS</span>
+      </a>
+      <a href="/#faq-section" onclick="closeMobileNav()" class="flex items-center justify-between py-2 text-neutral-800 hover:text-black">
+        <span>FAQ & Care</span>
+        <span class="text-xs text-neutral-400 font-mono-code font-bold">HELP</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN POLICY CONTAINER -->
+  <main class="flex-1">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+      
+      <!-- Breadcrumb -->
+      <nav aria-label="Breadcrumb" class="mb-6 sm:mb-8 text-xs font-mono-code text-neutral-500 flex items-center gap-2">
+        <a href="/" class="hover:text-black transition-colors">Home</a>
+        <span class="text-neutral-400">/</span>
+        <span class="text-black font-semibold">Return &amp; Refund Policy</span>
+      </nav>
+
+      <!-- Page Title & Header -->
+      <header class="border-b border-neutral-200 pb-8 mb-10">
+        <span class="text-[11px] font-mono-code tracking-widest uppercase text-neutral-400 block mb-2">Customer Care &bull; Guarantee</span>
+        <h1 class="font-display text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight text-neutral-900 mb-4">
+          Return &amp; Refund Policy
+        </h1>
+        <p class="text-sm font-sans text-neutral-600 leading-relaxed max-w-2xl">
+          Detailed guidelines on eligibility, exchange terms, return procedures, and unboxing verification.
+        </p>
+      </header>
+
+      <!-- Policy Content Sections -->
+      <article class="space-y-10 text-neutral-800 font-sans leading-relaxed text-sm sm:text-base">
+        
+        <!-- 1. Return Policy -->
+        <section class="space-y-3">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono-code text-xs font-bold text-neutral-400 tracking-wider">01</span>
+            <h2 class="font-display text-lg sm:text-xl font-bold uppercase tracking-wide text-neutral-900">
+              1. Return Policy
+            </h2>
+          </div>
+          <div class="pl-7 space-y-3 text-neutral-600 leading-relaxed">
+            <p>We accept returns only under the following conditions:</p>
+            <ul class="list-disc pl-5 space-y-2 text-neutral-700">
+              <li>The product must be unused and in its original packaging.</li>
+              <li>A return request must be made within 48 hours of delivery.</li>
+              <li>A 360-degree parcel opening video without any pauses, trims, or edits must be provided.</li>
+              <li>Return shipping charges will be borne by the customer.</li>
+              <li>Please return the products within 2 days of delivery with original conditions.</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr class="border-neutral-200" />
+
+        <!-- 2. Refund Policy -->
+        <section class="space-y-3">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono-code text-xs font-bold text-neutral-400 tracking-wider">02</span>
+            <h2 class="font-display text-lg sm:text-xl font-bold uppercase tracking-wide text-neutral-900">
+              2. Refund Policy
+            </h2>
+          </div>
+          <div class="pl-7 space-y-2 text-neutral-600 leading-relaxed">
+            <p>
+              We do not offer refunds. In case of an incorrect or defective product, an exchange will be provided.
+            </p>
+          </div>
+        </section>
+
+        <hr class="border-neutral-200" />
+
+        <!-- 3. Exchange Policy -->
+        <section class="space-y-3">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono-code text-xs font-bold text-neutral-400 tracking-wider">03</span>
+            <h2 class="font-display text-lg sm:text-xl font-bold uppercase tracking-wide text-neutral-900">
+              3. Exchange Policy
+            </h2>
+          </div>
+          <div class="pl-7 space-y-3 text-neutral-600 leading-relaxed">
+            <ul class="list-disc pl-5 space-y-2 text-neutral-700">
+              <li>Exchange is only available for shoes. Customers must ensure the product is returned in its original condition.</li>
+              <li>The exchange products will be delivered within 5 days.</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr class="border-neutral-200" />
+
+        <!-- 4. No Refund Policy -->
+        <section class="space-y-3">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono-code text-xs font-bold text-neutral-400 tracking-wider">04</span>
+            <h2 class="font-display text-lg sm:text-xl font-bold uppercase tracking-wide text-neutral-900">
+              4. No Refund Policy
+            </h2>
+          </div>
+          <div class="pl-7 space-y-2 text-neutral-600 leading-relaxed">
+            <p>
+              Kindly note that we do not offer refunds under any circumstances. Only exchanges will be processed.
+            </p>
+          </div>
+        </section>
+
+      </article>
+
+      <!-- OTHER POLICIES Navigation Section -->
+      <section class="mt-16 sm:mt-20 pt-10 border-t border-neutral-200" aria-labelledby="other-policies-heading">
+        <h3 id="other-policies-heading" class="font-display text-xs font-bold uppercase tracking-widest text-neutral-400 mb-6">
+          OTHER POLICIES
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a href="/terms-and-conditions" class="group block p-4 border border-neutral-200 rounded-lg hover:border-black transition-all bg-neutral-50/50 hover:bg-white">
+            <span class="text-xs font-mono-code text-neutral-400 block mb-1">Policy &bull; 01</span>
+            <span class="font-display text-sm font-bold uppercase text-neutral-900 group-hover:text-black flex items-center justify-between">
+              Terms &amp; Conditions
+              <span class="transition-transform group-hover:translate-x-1">&#x2192;</span>
+            </span>
+          </a>
+          <a href="/shipping-policy" class="group block p-4 border border-neutral-200 rounded-lg hover:border-black transition-all bg-neutral-50/50 hover:bg-white">
+            <span class="text-xs font-mono-code text-neutral-400 block mb-1">Policy &bull; 03</span>
+            <span class="font-display text-sm font-bold uppercase text-neutral-900 group-hover:text-black flex items-center justify-between">
+              Shipping Policy
+              <span class="transition-transform group-hover:translate-x-1">&#x2192;</span>
+            </span>
+          </a>
+          <a href="/privacy-policy" class="group block p-4 border border-neutral-200 rounded-lg hover:border-black transition-all bg-neutral-50/50 hover:bg-white">
+            <span class="text-xs font-mono-code text-neutral-400 block mb-1">Policy &bull; 04</span>
+            <span class="font-display text-sm font-bold uppercase text-neutral-900 group-hover:text-black flex items-center justify-between">
+              Privacy Policy
+              <span class="transition-transform group-hover:translate-x-1">&#x2192;</span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer id="site-footer" class="bg-[#0a0a0a] text-white border-t border-neutral-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10">
+
+      <!-- Brand column with Address (full width on mobile) -->
+      <div class="col-span-2 md:col-span-1 space-y-4 sm:space-y-5">
+        <!-- Official CORE Brand Logo for Footer -->
+        <a href="/" class="inline-block group" title="CORE Footwear">
+          <img src="/assets/core-logo-white-hd.png" alt="CORE Footwear" class="footer-brand-logo-img" />
+        </a>
+
+        <p class="text-xs text-neutral-500 font-sans leading-relaxed">
+          Architectural footwear engineered for both Men & Women. High durability vulcanized rubber, ergonomic foam beds, and understated luxury streetwear silhouettes.
+        </p>
+
+        <!-- Physical Address -->
+        <div class="flex items-start gap-2 text-xs text-neutral-400">
+          <svg class="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <address class="not-italic font-mono-code leading-relaxed">
+            Pandikkad Road, Wandoor,<br/>
+            Keralam 679328
+          </address>
+        </div>
+
+        <div class="text-[11px] font-mono-code text-neutral-500">
+          &copy; 2026 CORE FOOTWEAR DIVISION. ALL RIGHTS RESERVED.
+        </div>
+      </div>
+
+      <!-- Men's Silhouettes (Column 1 on mobile) -->
+      <div class="col-span-1">
+        <h4 class="font-display text-xs font-bold uppercase tracking-wider text-neutral-400 mb-3 sm:mb-4">Men's Collection</h4>
+        <ul class="space-y-2 text-xs font-mono-code text-neutral-300">
+          <li><a href="/#men-collection-section" class="hover:text-white transition-colors">Core Air-Stride 90s</a></li>
+          <li><a href="/#men-collection-section" class="hover:text-white transition-colors">Core Shell-Toe Obsidian</a></li>
+          <li><a href="/#men-collection-section" class="hover:text-white transition-colors">Monolith Lug Chelsea</a></li>
+          <li><a href="/#men-collection-section" class="hover:text-white transition-colors">Mudstone Heavy Derby</a></li>
+          <li><a href="/#men-collection-section" class="hover:text-white transition-colors">Nomad Leather Clogs</a></li>
+        </ul>
+      </div>
+
+      <!-- Women's Silhouettes (Column 2 on mobile) -->
+      <div class="col-span-1">
+        <h4 class="font-display text-xs font-bold uppercase tracking-wider text-neutral-400 mb-3 sm:mb-4">Women's Collection</h4>
+        <ul class="space-y-2 text-xs font-mono-code text-neutral-300">
+          <li><a href="/#women-collection-section" class="hover:text-white transition-colors">Core Fat-Lace Custom Low</a></li>
+          <li><a href="/#women-collection-section" class="hover:text-white transition-colors">Aura Sculpted Platform</a></li>
+          <li><a href="/#women-collection-section" class="hover:text-white transition-colors">Shadowline High-Top Trainer</a></li>
+          <li><a href="/#women-collection-section" class="hover:text-white transition-colors">Terra Chunky Lug Loafer</a></li>
+          <li><a href="/#women-collection-section" class="hover:text-white transition-colors">Monolith Tall Platform Boot</a></li>
+        </ul>
+      </div>
+
+      <!-- Customer Service & Direct WhatsApp Contact -->
+      <div class="col-span-2 md:col-span-1 pt-4 md:pt-0 border-t border-neutral-900 md:border-t-0">
+        <h4 class="font-display text-xs font-bold uppercase tracking-wider text-neutral-400 mb-3 sm:mb-4">Client Support</h4>
+        <ul class="grid grid-cols-2 md:grid-cols-1 gap-2 text-xs font-mono-code text-neutral-300">
+          <li><a href="/#faq-section" class="hover:text-white transition-colors">Size Guide</a></li>
+          <li><a href="/return-and-refund" class="text-white font-bold transition-colors">Free Returns</a></li>
+          <li><a href="/#faq-section" class="hover:text-white transition-colors">Care Guide</a></li>
+          <li><a href="https://wa.me/916238469390?text=Hi%20CORE%20Footwear%20Team%2C%20I%20have%20a%20question%20about%20orders" target="_blank" class="hover:text-emerald-400 transition-colors flex items-center gap-1 text-emerald-400 font-bold">
+            <span>WhatsApp</span> &#x2197;
+          </a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t border-neutral-800 py-4">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] font-mono-code text-neutral-500">
+        <span>DESIGNED IN KERALAM &bull; SHIPPED WORLDWIDE</span>
+        <div class="flex items-center gap-4">
+          <a href="/terms-and-conditions" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
+          <a href="/return-and-refund" class="text-white font-bold transition-colors">Return &amp; Refund Policy</a>
+          <a href="/shipping-policy" class="hover:text-white transition-colors">Shipping Policy</a>
+          <a href="/privacy-policy" class="hover:text-white transition-colors">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- OFFICIAL WHATSAPP WIDGET -->
+  <div class="whatsapp-widget-container">
+    <div class="whatsapp-tooltip">
+      <span class="w-2 h-2 rounded-full bg-[#25D366] animate-pulse"></span>
+      Need Sizing Help? Chat with CORE
+    </div>
+    <a 
+      href="https://wa.me/916238469390?text=Hello%20CORE%20Team%2C%20I%27d%20like%20to%20know%20more%20about%20shoe%20sizing%20and%20availability%21" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="whatsapp-float-btn" 
+      title="Chat with CORE on WhatsApp"
+      aria-label="Chat with CORE on WhatsApp"
+    >
+      <div class="whatsapp-pulse"></div>
+      <svg class="w-7 h-7 fill-white" viewBox="0 0 24 24">
+        <path d="M12.004 0C5.372 0 0 5.373 0 12c0 2.115.548 4.103 1.512 5.836L.055 24l6.334-1.45A11.936 11.936 0 0012.004 24C18.628 24 24 18.627 24 12 24 5.373 18.628 0 12.004 0zm.015 21.84c-1.85 0-3.6-.502-5.12-1.373l-.367-.21-3.765.862.879-3.668-.23-.377a9.835 9.835 0 01-1.503-5.074c0-5.43 4.417-9.847 9.856-9.847 5.438 0 9.855 4.417 9.855 9.847 0 5.43-4.417 9.84-9.855 9.84zm5.405-7.378c-.296-.149-1.754-.866-2.026-.965-.272-.099-.47-.148-.668.149-.197.297-.767.965-.94 1.163-.173.198-.346.223-.643.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.297-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"/>
+      </svg>
+    </a>
+  </div>
+
+  <script>
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileNav = document.getElementById('mobile-nav-panel');
+    if (mobileBtn && mobileNav) {
+      mobileBtn.addEventListener('click', () => {
+        mobileNav.classList.toggle('hidden');
+      });
+    }
+    function closeMobileNav() {
+      if (mobileNav) mobileNav.classList.add('hidden');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/terms-and-conditions", "destination": "/terms-and-conditions/index.html" },
+    { "source": "/return-and-refund", "destination": "/return-and-refund/index.html" },
+    { "source": "/shipping-policy", "destination": "/shipping-policy/index.html" },
+    { "source": "/privacy-policy", "destination": "/privacy-policy/index.html" }
+  ]
+}

@@ -1,0 +1,98 @@
+/* ==========================================================================
+   CINEMATIC HORIZONTAL INTRO CAROUSEL
+   Full-viewport, left-to-right auto-sliding, 60fps, zoom-in per slide
+   ========================================================================== */
+
+/* Prevent horizontal scroll globally when carousel is present */
+html, body {
+  overflow-x: hidden;
+}
+
+/* ---- Section wrapper ---- */
+.cinematic-carousel-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  min-height: 480px;
+  background: #000;
+  overflow: hidden;
+  /* GPU-composite layer for smooth 60fps */
+  will-change: transform;
+  /* Snap to this section on load */
+  display: block;
+}
+
+/* ---- Sliding track (holds all 3 slides side by side horizontally) ---- */
+.cinematic-track {
+  display: flex;
+  flex-direction: row;
+  width: 300%;          /* 3 slides × 100vw */
+  height: 100%;
+  /* JS will animate this transform with requestAnimationFrame */
+  transform: translateX(0%);
+  will-change: transform;
+}
+
+/* ---- Individual slide ---- */
+.cinematic-slide {
+  position: relative;
+  width: 33.3333%;      /* each slide = 1/3 of track = 100vw */
+  height: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #000;
+}
+
+/* ---- The actual image ---- */
+.cinematic-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  /* Zoom animation is driven by JS adding/removing a class */
+  transform: scale(1);
+  transform-origin: center center;
+  transition: transform 2.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
+/* When a slide is "active", gently zoom in */
+.cinematic-slide.c-active .cinematic-img {
+  transform: scale(1.07);
+}
+
+/* ---- Subtle dark vignette overlay so edges blend into black ---- */
+.cinematic-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0,0,0,0)   50%,
+    rgba(0,0,0,0.42) 100%
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* ---- Responsive tweaks ---- */
+@media (max-width: 768px) {
+  .cinematic-carousel-section {
+    height: 70vh;
+    min-height: 360px;
+  }
+  .cinematic-img {
+    object-position: center 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cinematic-carousel-section {
+    height: 60vh;
+    min-height: 300px;
+  }
+}

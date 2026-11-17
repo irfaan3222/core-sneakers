@@ -1,0 +1,73 @@
+﻿ID,Name,Gender,Category,Price (INR),Original Price,Rating,Reviews Count,Badge,Section,Sizes,Colors,Images,Description,Details
+core-men-drift-1,Core Men Phantom Low Drift,men,sneakers,3499,4499,4.9,88,NEW IN MEN,men-collection,"UK 7, UK 8, UK 9, UK 10, UK 11",Black / Monochrome,"assets/men/men-1.jpg
+assets/men/men-2.jpg
+assets/men/men-3.jpg","Sculpted architectural low-top silhouette with reinforced eyelets, padded ankle cushioning, and ultra-durable vulcanized outsole.",Full-grain breathable upper | Padded ergonomic collar | High traction vulcanized rubber sole | Core minimal branding
+core-men-retro-2,Core Men Air Stride Street,men,sneakers,3799,4899,5,104,BESTSELLER,men-collection,"UK 7, UK 8, UK 9, UK 10, UK 11",Onyx / Drift,"assets/men/men-2.jpg
+assets/men/men-4.jpg
+assets/men/men-5.jpg",High performance streetwear sneaker designed for daily concrete commute with impact absorption cupsole.,Layered mesh and premium synthetic leather | Chunky ergonomic outsole | Arch support foam insole
+core-men-court-3,Core Men Classic Court Minimal,men,sneakers,3299,4199,4.8,72,HERITAGE,men-collection,"UK 7, UK 8, UK 9, UK 10, UK 11",Core Black / White,"assets/men/men-3.jpg
+assets/men/men-6.jpg
+assets/men/men-7.jpg",Clean timeless court silhouette crafted for effortless versatility. Minimal paneling with tonal stitching.,Supple matte calf leather | Anti-slip rubber cupsole | Breathable perforated toe box
+core-men-chunky-4,Core Men Bold Lug Platform,men,sneakers,3999,5199,4.9,65,BOLD EDIT,men-collection,"UK 7, UK 8, UK 9, UK 10, UK 11",Obsidian Lug,"assets/men/men-4.jpg
+assets/men/men-1.jpg
+assets/men/men-5.jpg",Architectural oversized lug sole profile with heavy-duty construction and deep traction flex grooves.,Heavy-duty lug sole | Water-resistant treated leather | Padded collar & tongue
+core-women-platform-1,Core Women Cloud Stride Platform,women,sneakers,3499,4499,5,142,NEW IN WOMEN,women-collection,"UK 4, UK 5, UK 6, UK 7, UK 8",Vanilla / Cream,"assets/women/women-1.jpg
+assets/women/women-2.jpg
+assets/women/women-3.jpg",Featherlight elevated platform sole with ultra-clean silhouette and plush memory foam insole for all-day comfort.,Sculpted 4.5cm lightweight platform | Supple premium finish leather | Memory foam arch support insole
+core-women-retro-2,Core Women Sleek Retro Runner,women,sneakers,3699,4799,4.9,96,TRENDING,women-collection,"UK 4, UK 5, UK 6, UK 7, UK 8",Soft Sand / Bone,"assets/women/women-2.jpg
+assets/women/women-4.jpg
+assets/women/women-5.jpg","Vintage-inspired aerodynamic trainer with streamlined contours, subtle textural contrasts, and flexible rubber sole.",Streamlined low-profile silhouette | Padded tongue with embossed logo | High grip tread pattern
+core-women-chunky-3,Core Women Fat-Lace Chunky Low,women,sneakers,3899,4999,5,178,VIRAL EDIT,women-collection,"UK 4, UK 5, UK 6, UK 7, UK 8",Clean White / Black,"assets/women/women-3.jpg
+assets/women/women-1.jpg
+assets/women/women-4.jpg",The iconic chunky fat-lace edition tailored with balanced proportions and statement styling potential.,Overstuffed tubular fat laces | Supple leather shell-toe structure | Detachable subtle metal lace jewel
+core-women-low-4,Core Women Minimal Drift Runner,women,sneakers,3299,4199,4.8,84,DAILY ESSENTIAL,women-collection,"UK 4, UK 5, UK 6, UK 7, UK 8",Pristine White,"assets/women/women-4.jpg
+assets/women/women-5.jpg
+assets/women/women-2.jpg",Everyday clean trainer made with soft premium calfskin and responsive foam footbed for maximum ease.,Ultra-lightweight EVA midsole | Tonal minimal stitching | Breathable organic cotton lining
+core-fatlace-superstar,Core Fat-Lace Custom Low,women,sneakers,4499,5699,5,168,VIRAL EDIT,must-have,"UK 3, UK 4, UK 5, UK 6, UK 7, UK 8","Chalk White / Obsidian, Onyx Black, Cobalt Blue Accents","assets/products/core-fatlace-white.jpg
+assets/products/core-superstar-black.jpg
+assets/products/core-oldskool-black.jpg","The viral street silhouette. Premium crisp white calfskin leather upper paired with exaggerated chunky woven fat laces, contrasting obsidian side stripes, gold foil tongue typography, and a removable rhinestone crystal chain lace charm.",Overstuffed 24mm jumbo woven tubular laces | Supple full-grain calf leather with reinforced shell-toe | Detachable diamond-cut rhinestone lace link chain | Cushioned memory foam cupsole for cloud-like support
+core-oldskool-canvas,Core Stripe Canvas Skater,unisex,sneakers,3299,4199,4.9,204,HERITAGE,must-have,"UK 4, UK 5, UK 6, UK 7, UK 8, UK 9, UK 10, UK 11","Black / True White, Bone White, Royal Blue Stripe","assets/products/core-oldskool-black.jpg
+assets/products/core-fatlace-white.jpg
+assets/products/core-air-runner-onfeet.jpg",The timeless low-top skate silhouette built with heavy-duty 14oz double-stitched canvas and velvety suede toe & heel caps. Features an architectural white curved wave stripe and a high-grip vulcanized waffle gum sole.,14oz rugged canvas with reinforced suede stress zones | Archival vulcanized foxing tape with signature red heel tab | Padded collar for ankle protection and mobility | Custom diamond waffle vulcanized rubber outsole
+core-air-stride-retro,Core Air-Stride 90s Runner,men,sneakers,4899,6299,4.9,135,AIR CUSHION,must-have,"UK 7, UK 8, UK 9, UK 10, UK 11","White / Infrared / Black, Electric Blue / White","assets/products/core-air-runner-onfeet.jpg
+assets/products/core-oldskool-black.jpg
+assets/products/core-superstar-black.jpg","A dynamic 90s-inspired street runner featuring breathable athletic mesh, contrast black aerodynamic contour cages, vibrant infrared heel accents, and an exposed pressurized air-sole chamber.",Max-volume visible pressurized air cushioning capsule | Multi-layered ripstop mesh with synthetic leather overlays | Ergonomic waffle lug traction for all-weather grip | Padded neoprene tongue with retro silicone badge
+core-shell-superstar-black,Core Shell-Toe 'Obsidian',men,sneakers,3999,4999,4.8,92,ICONIC ARCHIVE,must-have,"UK 7, UK 8, UK 9, UK 10, UK 11","Obsidian / White, Triple White","assets/products/core-superstar-black.jpg
+assets/products/core-fatlace-white.jpg
+assets/products/core-air-runner-onfeet.jpg","The definitive monochromatic court staple. Matte black full-grain leather upper, sculpted protective rubber shell toe, contrasting serrated white triple stripes, and gold metallic foil branding on the tongue.",Full-grain matte cowhide leather upper | Architectural textured rubber shell toe bumper | Metallic gold hot-stamped tongue and quarter branding | Herringbone traction pattern rubber cupsole
+core-runner-v1-raw,Core Runner V1 Raw,men,sneakers,4299,5499,4.9,142,BESTSELLER,must-have,"UK 7, UK 8, UK 9, UK 10, UK 11","Raw Charcoal, Cobalt Blue","assets/products/core-oldskool-black.jpg
+assets/products/core-air-runner-onfeet.jpg
+assets/products/core-fatlace-white.jpg","An architectural everyday runner crafted from tactile ripstop canvas, brushed suede mudguards, and a dual-density sculpted EVA midsole. Engineered for concrete navigation.",Custom sculpted vulcanized rubber outsole | Ergonomic dual-density memory foam footbed | Reinforced heavy-gauge stitch detailing | Breathable aerospace mesh tongue
+aura-sculpted-platform,Aura Sculpted Platform,women,sneakers,4199,5299,4.8,98,TRENDING,must-have,"UK 3, UK 4, UK 5, UK 6, UK 7, UK 8","Vanilla Cream, Sky Blue Tint","assets/products/core-fatlace-white.jpg
+assets/products/core-superstar-black.jpg
+assets/products/core-oldskool-black.jpg",Elevated 5.5cm curved platform sneaker in creamy tumbled calfskin leather with a cushioned ankle collar. Perfectly balances brutalist sole architecture with featherlight comfort.,5.5cm sculpted lightweight platform sole | Premium tumbled calfskin leather upper | Padded collar and tongue for zero heel slippage | Anti-fatigue arch support shank
+strata-low-minimalist,Strata Low Minimalist,men,sneakers,3899,4799,5,84,STAFF PICK,must-have,"UK 7, UK 8, UK 9, UK 10, UK 11","Off-White / Bone, Electric Blue Accent","assets/products/core-oldskool-black.jpg
+assets/products/core-fatlace-white.jpg
+assets/products/core-superstar-black.jpg","Stripped-down luxury court silhouette with seamless side panels, full-grain Italian leather, and an unlined collar for a glove-like mold around your foot.",Full-grain nappa leather from certified tanneries | Waxed tonal cotton laces | Recycled rubber low-profile cupsole | Blind eyelets with interior metal reinforcements
+shadowline-high-top,Shadowline High-Top Trainer,women,sneakers,3799,4899,4.9,112,NEW ARRIVAL,earth-tones,"UK 3, UK 4, UK 5, UK 6, UK 7","Washed Black / Stone, Ocean Slate","assets/products/core-oldskool-black.jpg
+assets/products/core-fatlace-white.jpg
+assets/products/core-superstar-black.jpg",Distressed heavyweight 18oz selvedge duck canvas high-top with raw exposed edge detailing and a vulcanized rubber toe bumper. Inspired by archival military gym shoes.,18oz heavyweight Japanese selvedge canvas | Raw exposed foam tongue with tonal woven badge | Double-wrap foxing tape with textured toe bumper | Orthopedic high-rebound drop-in footbed
+mudstone-knee-stitch-boot,Mudstone Lug-Sole Derby,men,boots,4999,6299,4.7,65,LIMITED,earth-tones,"UK 7, UK 8, UK 9, UK 10, UK 11","Mudstone Earth, Deep Navy Blue","assets/products/core-superstar-black.jpg
+assets/products/core-oldskool-black.jpg
+assets/products/core-air-runner-onfeet.jpg","Brutalist 3-eyelet derby featuring an exaggerated commando lug sole, contrast welt stitching, and matte water-resistant pull-up leather that develops rich patina over time.",Brushed oiled calfskin with water-repellent finish | Exaggerated 4.8cm cleated rubber commando sole | Storm-welt construction for maximum moisture barrier | Reinforced steel shank for all-day structural stability
+frostline-trail-runner,Frostline Technical Runner,men,sneakers,3699,4599,4.9,78,WEATHERPROOF,earth-tones,"UK 7, UK 8, UK 9, UK 10, UK 11","Glacier Blue, Ash Slate","assets/products/core-air-runner-onfeet.jpg
+assets/products/core-oldskool-black.jpg
+assets/products/core-fatlace-white.jpg",Engineered for city and trail transitions. Water-resistant ripstop upper paired with high-abrasion TPU overlays and multi-directional chevron lug traction.,Weather-sealed water-resistant ripstop mesh | Quick-pull bungee cord lacing system | High-grip aggressive traction compound | 360-degree reflective accents for night visibility
+monolith-chelsea-boot,Monolith Chelsea Lug Boot,men,boots,5999,7499,5,153,FLAGSHIP,deep-tones,"UK 7, UK 8, UK 9, UK 10, UK 11","Obsidian Black, Midnight Navy","assets/products/core-superstar-black.jpg
+assets/products/core-oldskool-black.jpg
+assets/products/core-fatlace-white.jpg",The definitive CORE boot. Premium oiled Italian leather upper sitting atop a monolithic cleated sole with durable woven pull tabs and wide elastic side gussets.,Hand-burnished full-grain Italian leather | Heavy-duty cleated lug sole (5cm height) | High-tensile woven front & rear pull tabs with blue bar-tacks | Seamless Goodyear welt construction
+monolith-tall-chelsea-women,Monolith Platform Chelsea Boot,women,boots,5499,6999,4.9,120,MUST HAVE,deep-tones,"UK 3, UK 4, UK 5, UK 6, UK 7, UK 8","Gloss Obsidian, Royal Blue Ribbing","assets/products/core-fatlace-white.jpg
+assets/products/core-superstar-black.jpg
+assets/products/core-oldskool-black.jpg",An elongated shaft Chelsea silhouette for women featuring a 6cm sculpted tooth platform. Dramatic street silhouette with cloud-soft memory cushioning.,Sculpted 6cm tooth platform outsole | Glossy semi-patent water-resistant calf leather | Calf-hugging elastic ribbed shaft | Reinforced heel counter prevents creasing
+terra-chunky-loafer,Terra Chunky Lug Loafer,women,loafers,4499,5699,4.8,89,POPULAR,deep-tones,"UK 3, UK 4, UK 5, UK 6, UK 7","Deep Oxblood, Navy Blue Patent","assets/products/core-fatlace-white.jpg
+assets/products/core-superstar-black.jpg
+assets/products/core-air-runner-onfeet.jpg","Modernized heritage penny loafer with an exaggerated serrated lug sole, brushed leather finish, and reinforced moc-toe hand stitching.",Hand-stitched moccasin toe seam | Matte blue steel hardware bridge slot | 4.5cm lightweight extruded EVA tread | Anti-blister padded suede back heel liner
+core-slide-ergonomic,Core Slide Bio-Foam,unisex,slides,1899,2499,4.9,215,RESTOCKED,deep-tones,"UK 4, UK 5, UK 6, UK 7, UK 8, UK 9, UK 10, UK 11","Electric Blue, Chalk White, Onyx Black","assets/products/core-oldskool-black.jpg
+assets/products/core-superstar-black.jpg
+assets/products/core-fatlace-white.jpg","One-piece molded bio-based recovery slide with anatomical arch support, deep heel cup, and anti-slip water drainage tread.",Zero-waste single injection molded bio-EVA | Anatomically molded footbed with metatarsal support | Waterproof and 100% washable | Grip-tread ripple sole for indoor/outdoor use
+nomad-leather-mule,Nomad Leather Mule Clog,men,slides,2999,3899,4.7,52,SUMMER EDIT,deep-tones,"UK 7, UK 8, UK 9, UK 10, UK 11","Matte Black, Navy Nubuck","assets/products/core-oldskool-black.jpg
+assets/products/core-superstar-black.jpg
+assets/products/core-air-runner-onfeet.jpg",A relaxed architectural slip-on. Soft oiled nubuck leather upper sitting on a natural cork-latex footbed lined with plush microfiber.,Buttery-soft oiled nubuck leather | Natural cork-latex footbed with arch cradle | Matte blue steel branded pin-buckle strap | Shock-absorbing EVA outsole
+aero-breeze-knit-women,Aero Breeze Knit Runner,women,sneakers,3299,4199,4.8,74,FEATHERLIGHT,deep-tones,"UK 3, UK 4, UK 5, UK 6, UK 7, UK 8","Ice Blue / White, Pure White","assets/products/core-fatlace-white.jpg
+assets/products/core-air-runner-onfeet.jpg
+assets/products/core-oldskool-black.jpg",Ultra-breathable slip-on sneaker knitted from zero-friction recycled yarns. Weighs under 190 grams with responsive rebound cushioning.,Seamless 3D knit upper with zoned elasticity | Responsive rebound honeycomb insole | Ultra-flexible segmented groove outsole | Machine washable with cold delicate cycle

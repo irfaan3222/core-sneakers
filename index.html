@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CORE — Architectural Footwear for Men & Women</title>
+  <meta name="description" content="CORE Footwear — Official Store. Sculpted outsoles, full-grain leathers, and ergonomic minimalism for Men and Women." />
+  
+  <link rel="icon" type="image/png" href="assets/og-preview.png" />
+
+  <!-- Open Graph & WhatsApp Sharing Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CORE Footwear">
+  <meta property="og:url" content="https://yourdomain.com/">
+  <meta property="og:title" content="CORE — Architectural Footwear for Men & Women">
+  <meta property="og:description" content="CORE Footwear — Official Store. Sculpted outsoles, full-grain leathers, and ergonomic minimalism for Men and Women.">
+  <meta property="og:image" content="https://yourdomain.com/assets/share_card.jpg">
+  <meta property="og:image:secure_url" content="https://yourdomain.com/assets/share_card.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="image_src" href="https://yourdomain.com/assets/share_card.jpg">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CORE — Architectural Footwear for Men & Women">
+  <meta name="twitter:description" content="CORE Footwear — Official Store. Sculpted outsoles, full-grain leathers, and ergonomic minimalism for Men and Women.">
+  <meta name="twitter:image" content="https://yourdomain.com/assets/share_card.jpg">
+
+  <!-- Tailwind CSS (Local Bundle with CDN Fallback) -->
+  <script src="/js/tailwind.js"></script>
+  <script>
+    if (typeof tailwind === 'undefined') {
+      document.write('<script src="https://cdn.tailwindcss.com"><\/script>');
+    }
+  </script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            mono: ['Space Grotesk', 'monospace'],
+            sans: ['Inter', 'sans-serif']
+          },
+          colors: {
+            core: {
+              blue: '#0a0a0a',
+              hover: '#000000',
+              deep: '#0a0a0a',
+              light: '#f5f5f7',
+              ice: '#fafafa',
+              border: '#e5e5e5'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-white text-neutral-900 selection:bg-black selection:text-white">
+
+  <!-- TOP ANNOUNCEMENT BAR (10% OFF ON PREPAID ORDERS ONLY) -->
+  <div class="announcement-bar flex items-center justify-center text-xs font-mono-code font-bold py-2 px-4 text-center">
+    <span>✦ 10% OFF ON PREPAID ORDERS — USE CODE <strong class="underline decoration-white/70">CORE10</strong></span>
+  </div>
+
+  <!-- SITE HEADER / NAVBAR (LOGO AT TOP LEFT AS REQUESTED) -->
+  <header class="site-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex items-center justify-between">
+      
+      <!-- TOP LEFT: OFFICIAL BRAND LOGO -->
+      <div class="flex items-center gap-3 sm:gap-4">
+        <button id="mobile-menu-btn" class="lg:hidden p-1.5 text-black hover:text-neutral-600 focus:outline-none" aria-label="Toggle navigation menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+
+        <a href="#" class="flex items-center" title="CORE Footwear">
+          <img src="assets/core-logo-hd.png" alt="CORE" class="brand-logo-img" />
+        </a>
+      </div>
+
+      <!-- CENTER: CLEAN ESSENTIAL NAVIGATION LINKS (NECESSARY ONLY) -->
+      <nav class="hidden lg:flex items-center gap-8 text-xs font-display font-bold uppercase tracking-wider text-neutral-800">
+        <a href="#men-collection-section" class="hover:text-black transition-colors py-1">Men</a>
+        <a href="#women-collection-section" class="hover:text-black transition-colors py-1">Women</a>
+        <a href="#shop-by-brand-section" class="hover:text-black transition-colors py-1">Brands</a>
+        <a href="#archive-drops-section" class="hover:text-black transition-colors py-1">Drops</a>
+        <a href="#reels-section" class="hover:text-black transition-colors py-1">Lookbook</a>
+      </nav>
+
+      <!-- TOP RIGHT: CURRENCY, SEARCH, WISHLIST, CART -->
+      <div class="flex items-center gap-2 sm:gap-4">
+        <!-- Currency Selector -->
+        <div class="hidden sm:flex items-center text-xs font-mono-code font-bold text-black">
+          <select id="currency-selector" class="bg-transparent border-none py-1 pl-1 pr-3 text-xs font-mono-code font-bold cursor-pointer focus:outline-none text-black">
+            <option value="INR">INR (₹)</option>
+            <option value="USD">USD ($)</option>
+            <option value="EUR">EUR (€)</option>
+            <option value="GBP">GBP (£)</option>
+          </select>
+        </div>
+
+        <!-- Search Icon -->
+        <button onclick="openSearchDrawer()" class="p-2 text-neutral-700 hover:text-black transition-colors" title="Search footwear">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </button>
+
+        <!-- Wishlist Icon -->
+        <a href="#gender-filter-section" class="p-2 text-neutral-700 hover:text-black relative transition-colors" title="Wishlist">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+        </a>
+
+        <!-- Cart Bag with Live Item Counter Badge -->
+        <button onclick="openCartDrawer()" class="p-2 text-neutral-700 hover:text-black relative transition-colors" title="Shopping Bag">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+          <span class="cart-count-badge absolute -top-1 -right-1 bg-black text-white text-[10px] font-mono-code font-bold w-4 h-4 rounded-full items-center justify-center hidden">0</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Nav Slide Panel (Essential links with clean layout) -->
+    <div id="mobile-nav-panel" class="hidden border-t border-neutral-200 bg-white/95 backdrop-blur-md px-6 py-5 space-y-3 font-display font-bold text-sm uppercase">
+      <a href="#men-collection-section" onclick="closeMobileNav()" class="flex items-center justify-between py-2 text-neutral-800 hover:text-black border-b border-neutral-100">
+        <span>Men's Footwear</span>
+        <span class="text-xs text-black font-mono-code font-bold">SHOP ↗</span>
+      </a>
+      <a href="#women-collection-section" onclick="closeMobileNav()" class="flex items-center justify-between py-2 text-neutral-800 hover:text-black border-b border-neutral-100">
+        <span>Women's Footwear</span>
+        <span class="text-xs text-black font-mono-code font-bold">SHOP &#x2197;</span>
+      </a>
+      <a href="#shop-by-brand-section" onclick="closeMobileNav()" class="flex items-center justify-between py-2 text-neutral-800 hover:text-black border-b border-neutral-100">
+        <span>Shop By Brand</span>
+        <span class="text-xs text-black font-mono-code font-bold">BRANDS</span>
+      </a>
+      <a href="#archive-drops-section" onclick="closeMobileNav()" class="flex items-center justify-between py-2 text-neutral-800 hover:text-black border-b border-neutral-100">
+        <span>New Drops</span>
+        <span class="text-xs text-neutral-400 font-mono-code font-bold">ARCHIVE</span>
+      </a>
+      <a href="#reels-section" onclick="closeMobileNav()" class="flex items-center justify-between py-2 text-neutral-800 hover:text-black border-b border-neutral-100">
+        <span>Lookbook Stories</span>
+        <span class="text-xs text-black font-mono-code font-bold">REELS</span>
+      </a>
+      <a href="#faq-section" onclick="closeMobileNav()" class="flex items-center justify-between py-2 text-neutral-800 hover:text-black">
+        <span>FAQ & Care</span>
+        <span class="text-xs text-neutral-400 font-mono-code font-bold">HELP</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO VIDEO ENTRY SECTION -->
+  <section id="hero-entry-video-section" class="relative w-full h-[55vh] sm:h-[75vh] lg:h-screen overflow-hidden bg-black flex items-center justify-center">
+    <video 
+      id="hero-entry-video"
+      src="assets/videos/AQOV6CLV4Jo06AOUChMtNcLrro7UPx5jPVJiAfCVErrtVSD-iNsk9nFS_H74iDBjYJOx_cyIRbm8Tjh4ByT1H-S8.mp4" 
+      autoplay 
+      loop 
+      muted 
+      playsinline 
+      preload="auto"
+      class="w-full h-full object-cover object-center"
+    ></video>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 pointer-events-none"></div>
+
+
+
+    <!-- Clean Unmute button in bottom corner (No text overwriting video) -->
+    <div class="absolute bottom-5 right-5 z-20">
+      <button
+        id="hero-sound-toggle"
+        onclick="toggleHeroEntrySound()"
+        class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-black/60 hover:bg-black text-white text-[11px] sm:text-xs font-mono-code font-bold border border-white/20 backdrop-blur-md transition-all shadow-lg cursor-pointer"
+        title="Toggle Audio"
+      >
+        <svg id="hero-sound-icon-muted" class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"/>
+        </svg>
+        <svg id="hero-sound-icon-unmuted" class="w-3.5 h-3.5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/>
+        </svg>
+        <span id="hero-sound-label">UNMUTE</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- TICKER MARQUEE -->
+  <div class="marquee-wrapper py-2.5 sm:py-3.5 bg-white border-y border-neutral-200">
+    <div class="marquee-content inline-flex items-center">
+      <span class="inline-flex items-center px-3 sm:px-4"><img src="assets/core-sneakers-banner-logo.png" alt="CORE SNEAKERS" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0 select-none" /></span>
+      <span class="inline-flex items-center px-3 sm:px-4"><img src="assets/core-sneakers-banner-logo.png" alt="CORE SNEAKERS" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0 select-none" /></span>
+      <span class="inline-flex items-center px-3 sm:px-4"><img src="assets/core-sneakers-banner-logo.png" alt="CORE SNEAKERS" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0 select-none" /></span>
+      <span class="inline-flex items-center px-3 sm:px-4"><img src="assets/core-sneakers-banner-logo.png" alt="CORE SNEAKERS" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0 select-none" /></span>
+      <span class="inline-flex items-center px-3 sm:px-4"><img src="assets/core-sneakers-banner-logo.png" alt="CORE SNEAKERS" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0 select-none" /></span>
+      <span class="inline-flex items-center px-3 sm:px-4"><img src="assets/core-sneakers-banner-logo.png" alt="CORE SNEAKERS" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0 select-none" /></span>
+      <span class="inline-flex items-center px-3 sm:px-4"><img src="assets/core-sneakers-banner-logo.png" alt="CORE SNEAKERS" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0 select-none" /></span>
+      <span class="inline-flex items-center px-3 sm:px-4"><img src="assets/core-sneakers-banner-logo.png" alt="CORE SNEAKERS" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0 select-none" /></span>
+      <span class="inline-flex items-center px-3 sm:px-4"><img src="assets/core-sneakers-banner-logo.png" alt="CORE SNEAKERS" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0 select-none" /></span>
+      <span class="inline-flex items-center px-3 sm:px-4"><img src="assets/core-sneakers-banner-logo.png" alt="CORE SNEAKERS" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0 select-none" /></span>
+      <span class="inline-flex items-center px-3 sm:px-4"><img src="assets/core-sneakers-banner-logo.png" alt="CORE SNEAKERS" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0 select-none" /></span>
+      <span class="inline-flex items-center px-3 sm:px-4"><img src="assets/core-sneakers-banner-logo.png" alt="CORE SNEAKERS" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0 select-none" /></span>
+      <span class="inline-flex items-center px-3 sm:px-4"><img src="assets/core-sneakers-banner-logo.png" alt="CORE SNEAKERS" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0 select-none" /></span>
+      <span class="inline-flex items-center px-3 sm:px-4"><img src="assets/core-sneakers-banner-logo.png" alt="CORE SNEAKERS" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0 select-none" /></span>
+      <span class="inline-flex items-center px-3 sm:px-4"><img src="assets/core-sneakers-banner-logo.png" alt="CORE SNEAKERS" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0 select-none" /></span>
+      <span class="inline-flex items-center px-3 sm:px-4"><img src="assets/core-sneakers-banner-logo.png" alt="CORE SNEAKERS" class="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0 select-none" /></span>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE FILTER TABS & SEARCH / SORT CONTROLS -->
+  <section id="gender-filter-section" class="pt-12 pb-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-neutral-200 pb-6">
+      
+      <!-- Gender Filter Buttons -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-none">
+        <button class="gender-tab filter-tab-active px-5 py-2.5 rounded-full border border-neutral-300 text-xs font-display font-bold uppercase tracking-wider transition-all" data-gender="all">
+          All Silhouettes
+        </button>
+        <button class="gender-tab px-5 py-2.5 rounded-full border border-neutral-300 text-xs font-display font-bold uppercase tracking-wider text-neutral-700 hover:border-black hover:text-black transition-all" data-gender="men">
+          Men's Footwear
+        </button>
+        <button class="gender-tab px-5 py-2.5 rounded-full border border-neutral-300 text-xs font-display font-bold uppercase tracking-wider text-neutral-700 hover:border-black hover:text-black transition-all" data-gender="women">
+          Women's Footwear
+        </button>
+        <button class="gender-tab px-5 py-2.5 rounded-full border border-neutral-300 text-xs font-display font-bold uppercase tracking-wider text-neutral-700 hover:border-black hover:text-black transition-all" data-gender="unisex">
+          Unisex Series
+        </button>
+      </div>
+
+      <!-- Sort Controls & Sizing Guide Shortcut -->
+      <div class="flex items-center gap-4 text-xs font-mono-code">
+        <button onclick="openSizeGuide()" class="text-black hover:text-neutral-600 flex items-center gap-1.5 underline underline-offset-4 font-semibold">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6h18M3 12h18M3 18h18"></path></svg>
+          Sizing Chart
+        </button>
+
+        <div class="flex items-center gap-2">
+          <span class="text-neutral-500 font-bold uppercase">Sort:</span>
+          <select id="sort-select" class="bg-neutral-100 border border-neutral-300 text-black rounded-lg py-1.5 px-3 text-xs font-mono-code font-bold cursor-pointer focus:outline-none">
+            <option value="featured">Featured First</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="rating">Top Rated (5.0★)</option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION: MEN SNEAKERS COLLECTION (From user downloads mensneakersimage) -->
+  <section id="men-collection-section" class="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-neutral-200">
+    <div class="mb-6 flex justify-between items-end">
+      <div>
+        <span class="text-xs font-mono-code font-bold tracking-widest uppercase text-black block mb-1">✦ MEN EXCLUSIVE SNEAKERS</span>
+        <h2 class="font-display text-2xl md:text-3xl font-black uppercase text-neutral-900 tracking-tight">MEN'S COLLECTION</h2>
+        <span class="text-xs font-mono-code text-neutral-500 font-bold uppercase">ARCHITECTURAL SILHOUETTES CRAFTED FOR MEN</span>
+      </div>
+
+      <!-- Prev / Next Sliding Navigation Buttons -->
+      <div class="flex items-center gap-2">
+        <button onclick="slideSection('men-slider-track', -1)" class="slider-nav-btn" title="Slide Left">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <button onclick="slideSection('men-slider-track', 1)" class="slider-nav-btn" title="Slide Right">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Sliding Men Carousel Track -->
+    <div class="slider-section-container">
+      <div id="men-slider-track" class="slider-track no-scrollbar">
+        <!-- Injected dynamically by app.js using images from /home/technaureus/Downloads/mensneakersimage -->
+      </div>
+      <div class="slider-progress-wrapper">
+        <div id="men-progress-bar" class="slider-progress-bar"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: WOMEN SNEAKERS COLLECTION (From user downloads womensmensneakersimage) -->
+  <section id="women-collection-section" class="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-neutral-200 bg-neutral-50/50">
+    <div class="mb-6 flex justify-between items-end">
+      <div>
+        <span class="text-xs font-mono-code font-bold tracking-widest uppercase text-black block mb-1">✦ WOMEN EXCLUSIVE SNEAKERS</span>
+        <h2 class="font-display text-2xl md:text-3xl font-black uppercase text-neutral-900 tracking-tight">WOMEN'S COLLECTION</h2>
+        <span class="text-xs font-mono-code text-neutral-500 font-bold uppercase">ELEVATED PLATFORMS & RUNNERS FOR WOMEN</span>
+      </div>
+
+      <!-- Prev / Next Sliding Navigation Buttons -->
+      <div class="flex items-center gap-2">
+        <button onclick="slideSection('women-slider-track', -1)" class="slider-nav-btn" title="Slide Left">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <button onclick="slideSection('women-slider-track', 1)" class="slider-nav-btn" title="Slide Right">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Sliding Women Carousel Track -->
+    <div class="slider-section-container">
+      <div id="women-slider-track" class="slider-track no-scrollbar">
+        <!-- Injected dynamically by app.js using images from /home/technaureus/Downloads/womensmensneakersimage -->
+      </div>
+      <div class="slider-progress-wrapper">
+        <div id="women-progress-bar" class="slider-progress-bar"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 1: MUST HAVE SLIDER (Matches Screenshot 2) -->
+  <section id="must-have-section" class="py-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-6 flex justify-between items-end">
+      <div>
+        <h2 class="font-display text-2xl md:text-3xl font-black uppercase text-neutral-900 tracking-tight">MUST HAVE</h2>
+        <span class="text-xs font-mono-code text-black font-bold uppercase">SWIPE & SLIDE TO EXPLORE ESSENTIALS</span>
+      </div>
+
+      <!-- Prev / Next Sliding Navigation Buttons -->
+      <div class="flex items-center gap-2">
+        <button onclick="slideSection('must-have-slider-track', -1)" class="slider-nav-btn" title="Slide Left">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <button onclick="slideSection('must-have-slider-track', 1)" class="slider-nav-btn" title="Slide Right">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Sliding Product Carousel Track -->
+    <div class="slider-section-container">
+      <div id="must-have-slider-track" class="slider-track no-scrollbar">
+        <!-- Injected dynamically by app.js (CLEAN: No text overlaying photos!) -->
+      </div>
+      <div class="slider-progress-wrapper">
+        <div id="must-have-progress-bar" class="slider-progress-bar"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: NEW IN - CORE ARCHIVE DROPS SLIDER -->
+  <section id="archive-drops-section" class="py-12 bg-neutral-100 border-t border-b border-neutral-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="mb-6 flex justify-between items-end">
+        <div>
+          <span class="text-xs font-mono-code font-bold tracking-widest uppercase text-black block mb-1">✦ NEW VIRAL STREET ARCHIVE</span>
+          <h2 class="font-display text-2xl md:text-3xl font-black uppercase text-neutral-900 tracking-tight">FEATURED ARCHIVE SILHOUETTES</h2>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <button onclick="slideSection('archive-slider-track', -1)" class="slider-nav-btn" title="Slide Left">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button onclick="slideSection('archive-slider-track', 1)" class="slider-nav-btn" title="Slide Right">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="slider-section-container">
+        <div id="archive-slider-track" class="slider-track no-scrollbar">
+          <!-- Injected dynamically by app.js -->
+        </div>
+        <div class="slider-progress-wrapper">
+          <div id="archive-progress-bar" class="slider-progress-bar"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION: SHOP BY BRAND (SNAPKICKS STYLE) -->
+  <section id="shop-by-brand-section" class="py-16 bg-[#000000] text-white border-t border-b border-neutral-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="mb-10 flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+        <div>
+          <span class="text-xs font-mono-code font-bold tracking-widest uppercase text-neutral-400 block mb-1">✦ CURATED ARCHIVES</span>
+          <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight text-white">Shop By Brand</h2>
+        </div>
+        <div class="text-xs font-mono-code text-neutral-400 font-bold uppercase">
+          10 ICONIC SILHOUETTE LABELS
+        </div>
+      </div>
+
+      <!-- 10 Brands Grid (Inspired directly by SnapKicks reference) -->
+      <div class="brand-grid">
+        
+        <!-- 1. Nike -->
+        <a href="#gender-filter-section" onclick="handleBrandClick('nike')" class="brand-card-item">
+          <div class="brand-tile">
+            <img src="assets/brands/nike.png" alt="Nike" loading="lazy" />
+          </div>
+          <div class="brand-card-label">
+            <span>Nike</span>
+            <span class="arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- 2. Adidas -->
+        <a href="#gender-filter-section" onclick="handleBrandClick('adidas')" class="brand-card-item">
+          <div class="brand-tile">
+            <img src="assets/brands/adidas.png" alt="Adidas" loading="lazy" />
+          </div>
+          <div class="brand-card-label">
+            <span>Adidas</span>
+            <span class="arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- 3. Air Jordan -->
+        <a href="#gender-filter-section" onclick="handleBrandClick('jordan')" class="brand-card-item">
+          <div class="brand-tile">
+            <img src="assets/brands/air-jordan.png" alt="Air Jordan" loading="lazy" />
+          </div>
+          <div class="brand-card-label">
+            <span>Air Jordan</span>
+            <span class="arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- 4. New Balance -->
+        <a href="#gender-filter-section" onclick="handleBrandClick('new balance')" class="brand-card-item">
+          <div class="brand-tile">
+            <img src="assets/brands/new-balance.png" alt="New Balance" loading="lazy" />
+          </div>
+          <div class="brand-card-label">
+            <span>New Balance</span>
+            <span class="arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- 5. Puma -->
+        <a href="#gender-filter-section" onclick="handleBrandClick('puma')" class="brand-card-item">
+          <div class="brand-tile">
+            <img src="assets/brands/puma.png" alt="Puma" loading="lazy" />
+          </div>
+          <div class="brand-card-label">
+            <span>Puma</span>
+            <span class="arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- 6. Converse -->
+        <a href="#gender-filter-section" onclick="handleBrandClick('converse')" class="brand-card-item">
+          <div class="brand-tile">
+            <img src="assets/brands/converse.png" alt="Converse" loading="lazy" />
+          </div>
+          <div class="brand-card-label">
+            <span>Converse</span>
+            <span class="arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- 7. Vans -->
+        <a href="#gender-filter-section" onclick="handleBrandClick('vans')" class="brand-card-item">
+          <div class="brand-tile">
+            <img src="assets/brands/vans.png" alt="Vans" loading="lazy" />
+          </div>
+          <div class="brand-card-label">
+            <span>Vans</span>
+            <span class="arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- 8. Crocs -->
+        <a href="#gender-filter-section" onclick="handleBrandClick('crocs')" class="brand-card-item">
+          <div class="brand-tile">
+            <img src="assets/brands/crocs.png" alt="Crocs" loading="lazy" />
+          </div>
+          <div class="brand-card-label">
+            <span>Crocs</span>
+            <span class="arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- 9. Louis Vuitton -->
+        <a href="#gender-filter-section" onclick="handleBrandClick('louis vuitton')" class="brand-card-item">
+          <div class="brand-tile">
+            <img src="assets/brands/louis-vuitton.png" alt="Louis Vuitton" loading="lazy" />
+          </div>
+          <div class="brand-card-label">
+            <span>Louis Vuitton</span>
+            <span class="arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- 10. Onitsuka Tiger -->
+        <a href="#gender-filter-section" onclick="handleBrandClick('tiger')" class="brand-card-item">
+          <div class="brand-tile !bg-black !p-0">
+            <img src="assets/brands/onitsuka-tiger.png" alt="Onitsuka Tiger" loading="lazy" class="!max-w-full !max-h-full w-full h-full object-cover" />
+          </div>
+          <div class="brand-card-label">
+            <span>Onitsuka Tiger</span>
+            <span class="arrow">&rarr;</span>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 3: EARTH & LAWN EDITORIAL SLIDER (Matches Screenshot 3) -->
+  <section class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="mb-6 flex justify-between items-end">
+        <div>
+          <span class="text-xs font-mono-code font-bold tracking-widest uppercase text-black block mb-1">✦ OUTDOOR & SOIL EDITORIAL</span>
+          <h2 class="font-display text-2xl md:text-3xl font-black uppercase text-neutral-900 tracking-tight">KNEE STITCH & HEAVY SOLE RELEASES</h2>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <button onclick="slideSection('outdoor-slider-track', -1)" class="slider-nav-btn" title="Slide Left">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button onclick="slideSection('outdoor-slider-track', 1)" class="slider-nav-btn" title="Slide Right">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="slider-section-container mb-16">
+        <div id="outdoor-slider-track" class="slider-track no-scrollbar">
+          <!-- Populated dynamically by app.js -->
+        </div>
+        <div class="slider-progress-wrapper">
+          <div id="outdoor-progress-bar" class="slider-progress-bar"></div>
+        </div>
+      </div>
+
+      <!-- DEEP TONE SILHOUETTES Heading -->
+      <div class="mb-6 flex justify-between items-baseline pt-6 border-t border-neutral-200">
+        <h2 class="font-display text-2xl md:text-3xl font-black uppercase text-neutral-900 tracking-tight">DEEP TONE SILHOUETTES</h2>
+        <span class="text-xs font-mono-code text-black font-bold">ALL ARCHITECTURAL RELEASES</span>
+      </div>
+
+      <!-- Full Collection Grid (2 columns mobile, 4 columns desktop) -->
+      <div id="all-products-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-6">
+        <!-- Populated dynamically by app.js -->
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 5: BRAND STORY NARRATIVE (Matches Screenshot 5) -->
+  <section class="py-12 bg-neutral-100 border-t border-neutral-200">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <div class="w-12 h-1 bg-black mx-auto mb-6 rounded-full"></div>
+      <p class="text-xs sm:text-sm md:text-base font-normal text-neutral-700 leading-relaxed tracking-normal font-sans">
+        <strong class="text-black">CORE</strong> is an independent architectural footwear design studio. Dedicated to structural aesthetics and ergonomic performance, we bring together carefully engineered footwear silhouettes for both <strong>Men and Women</strong>, with a strict focus on contemporary brutalist lines and endurance quality. Built on a passion for silhouette and a commitment to delivering distinctive pieces made for everyday wear.
+      </p>
+      <div class="mt-4 text-[11px] font-mono-code text-black tracking-widest uppercase font-bold">
+        ESTABLISHED 2026 • DESIGNED WITHOUT BOUNDARIES
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: LOOKBOOK VIDEOS (CONTINUOUS AUTOPLAY & ZERO BADGE CLUTTER) -->
+  <section id="reels-section" class="py-16 bg-[#0a0a0a] text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="mb-8 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+        <div>
+          <span class="text-xs font-mono-code font-bold tracking-widest uppercase text-neutral-400 block mb-1">✦ IN-MOTION LOOKBOOK</span>
+          <h2 class="font-display text-2xl md:text-3xl font-black uppercase text-white tracking-tight">LOOKBOOK STORIES</h2>
+        </div>
+        
+        <!-- Reels Sliding Controls -->
+        <div class="flex items-center gap-2">
+          <button onclick="slideSection('reels-slider-track', -1)" class="slider-nav-btn bg-white/10 text-white border-white/20 hover:bg-black hover:text-white" title="Slide Left">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button onclick="slideSection('reels-slider-track', 1)" class="slider-nav-btn bg-white/10 text-white border-white/20 hover:bg-black hover:text-white" title="Slide Right">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Horizontal Sliding Reels Track (Real Autoplaying MP4 Videos) -->
+      <div class="slider-section-container">
+        <div id="reels-slider-track" class="slider-track no-scrollbar">
+          <!-- Populated dynamically by app.js (Autoplay continuous, clean aesthetic) -->
+        </div>
+        <div class="slider-progress-wrapper bg-white/10">
+          <div id="reels-progress-bar" class="slider-progress-bar bg-black"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 7: FAQ ACCORDION (Matches Screenshot 5) -->
+  <section id="faq-section" class="py-16 max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-10">
+      <span class="text-xs font-mono-code font-bold tracking-widest uppercase text-black block mb-2">• FREQUENTLY ASKED QUESTIONS</span>
+      <h2 class="font-display text-2xl sm:text-3xl md:text-4xl font-black uppercase text-neutral-900 tracking-tight">Everything You Need To Know</h2>
+    </div>
+
+    <div id="faq-accordion" class="border-t border-neutral-200">
+      <!-- Populated dynamically by app.js -->
+    </div>
+  </section>
+
+  <!-- NEWSLETTER SIGNUP -->
+  <section class="py-14 bg-neutral-100 border-t border-neutral-200">
+    <div class="max-w-xl mx-auto px-6 text-center">
+      <h3 class="font-display text-xl sm:text-2xl font-black uppercase text-neutral-900 mb-2">JOIN THE CORE ARCHIVE</h3>
+      <p class="text-xs font-mono-code text-black font-bold mb-6">Receive private drop access, restock alerts, and 10% off your first order.</p>
+      
+      <form onsubmit="event.preventDefault(); showToast('Subscribed to CORE archive! Check your inbox.'); this.reset();" class="flex flex-col sm:flex-row gap-2">
+        <input 
+          type="email" 
+          placeholder="ENTER YOUR EMAIL" 
+          required 
+          class="flex-1 bg-white border border-neutral-300 rounded-full px-5 py-3 text-xs font-mono-code placeholder-neutral-400 focus:outline-none focus:border-black"
+        />
+        <button type="submit" class="pill-btn text-xs px-8 py-3">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- SITE FOOTER -->
+  <footer id="site-footer" class="bg-[#0a0a0a] text-white border-t border-neutral-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10">
+
+      <!-- Brand column with Address (full width on mobile) -->
+      <div class="col-span-2 md:col-span-1 space-y-4 sm:space-y-5">
+        <!-- Official CORE Brand Logo for Footer -->
+        <a href="/" class="inline-block group" title="CORE Footwear">
+          <img src="assets/core-logo-white-hd.png" alt="CORE Footwear" class="footer-brand-logo-img" />
+        </a>
+
+        <p class="text-xs text-neutral-500 font-sans leading-relaxed">
+          Architectural footwear engineered for both Men & Women. High durability vulcanized rubber, ergonomic foam beds, and understated luxury streetwear silhouettes.
+        </p>
+
+        <!-- Physical Address -->
+        <div class="flex items-start gap-2 text-xs text-neutral-400">
+          <svg class="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <address class="not-italic font-mono-code leading-relaxed">
+            Pandikkad Road, Wandoor,<br/>
+            Keralam 679328
+          </address>
+        </div>
+
+        <div class="text-[11px] font-mono-code text-neutral-500">
+          &copy; 2026 CORE FOOTWEAR DIVISION. ALL RIGHTS RESERVED.
+        </div>
+      </div>
+
+      <!-- Men's Silhouettes (Column 1 on mobile) -->
+      <div class="col-span-1">
+        <h4 class="font-display text-xs font-bold uppercase tracking-wider text-neutral-400 mb-3 sm:mb-4">Men's Collection</h4>
+        <ul class="space-y-2 text-xs font-mono-code text-neutral-300">
+          <li><a href="#men-collection-section" class="hover:text-white transition-colors">Core Air-Stride 90s</a></li>
+          <li><a href="#men-collection-section" class="hover:text-white transition-colors">Core Shell-Toe Obsidian</a></li>
+          <li><a href="#men-collection-section" class="hover:text-white transition-colors">Monolith Lug Chelsea</a></li>
+          <li><a href="#men-collection-section" class="hover:text-white transition-colors">Mudstone Heavy Derby</a></li>
+          <li><a href="#men-collection-section" class="hover:text-white transition-colors">Nomad Leather Clogs</a></li>
+        </ul>
+      </div>
+
+      <!-- Women's Silhouettes (Column 2 on mobile) -->
+      <div class="col-span-1">
+        <h4 class="font-display text-xs font-bold uppercase tracking-wider text-neutral-400 mb-3 sm:mb-4">Women's Collection</h4>
+        <ul class="space-y-2 text-xs font-mono-code text-neutral-300">
+          <li><a href="#women-collection-section" class="hover:text-white transition-colors">Core Fat-Lace Custom Low</a></li>
+          <li><a href="#women-collection-section" class="hover:text-white transition-colors">Aura Sculpted Platform</a></li>
+          <li><a href="#women-collection-section" class="hover:text-white transition-colors">Shadowline High-Top Trainer</a></li>
+          <li><a href="#women-collection-section" class="hover:text-white transition-colors">Terra Chunky Lug Loafer</a></li>
+          <li><a href="#women-collection-section" class="hover:text-white transition-colors">Monolith Tall Platform Boot</a></li>
+        </ul>
+      </div>
+
+      <!-- Customer Service & Direct WhatsApp Contact (Split across 2 columns on mobile) -->
+      <div class="col-span-2 md:col-span-1 pt-4 md:pt-0 border-t border-neutral-900 md:border-t-0">
+        <h4 class="font-display text-xs font-bold uppercase tracking-wider text-neutral-400 mb-3 sm:mb-4">Client Support</h4>
+        <ul class="grid grid-cols-2 md:grid-cols-1 gap-2 text-xs font-mono-code text-neutral-300">
+          <li><button onclick="openSizeGuide()" class="hover:text-white transition-colors text-left">Size Guide</button></li>
+          <li><a href="/return-and-refund" class="hover:text-white transition-colors">Free Returns</a></li>
+          <li><a href="#faq-section" class="hover:text-white transition-colors">Care Guide</a></li>
+          <li><a href="https://wa.me/916238469390?text=Hi%20CORE%20Footwear%20Team%2C%20I%20have%20a%20question%20about%20orders" target="_blank" class="hover:text-emerald-400 transition-colors flex items-center gap-1 text-emerald-400 font-bold">
+            <span>WhatsApp</span> &#x2197;
+          </a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t border-neutral-800 py-4">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] font-mono-code text-neutral-500">
+        <span>DESIGNED IN KERALAM &bull; SHIPPED WORLDWIDE</span>
+        <div class="flex items-center gap-4">
+          <a href="/terms-and-conditions" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
+          <a href="/return-and-refund" class="hover:text-white transition-colors">Return &amp; Refund Policy</a>
+          <a href="/shipping-policy" class="hover:text-white transition-colors">Shipping Policy</a>
+          <a href="/privacy-policy" class="hover:text-white transition-colors">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PIXEL-PERFECT OFFICIAL WHATSAPP WIDGET WITH TOOLTIP -->
+  <div class="whatsapp-widget-container">
+    <div class="whatsapp-tooltip">
+      <span class="w-2 h-2 rounded-full bg-[#25D366] animate-pulse"></span>
+      Need Sizing Help? Chat with CORE
+    </div>
+    <a 
+      href="https://wa.me/916238469390?text=Hello%20CORE%20Team%2C%20I%27d%20like%20to%20know%20more%20about%20shoe%20sizing%20and%20availability%21" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="whatsapp-float-btn" 
+      title="Chat with CORE on WhatsApp"
+      aria-label="Chat with CORE on WhatsApp"
+    >
+      <div class="whatsapp-pulse"></div>
+      <svg class="w-7 h-7 fill-white" viewBox="0 0 24 24">
+        <path d="M12.004 0C5.372 0 0 5.373 0 12c0 2.115.548 4.103 1.512 5.836L.055 24l6.334-1.45A11.936 11.936 0 0012.004 24C18.628 24 24 18.627 24 12 24 5.373 18.628 0 12.004 0zm.015 21.84c-1.85 0-3.6-.502-5.12-1.373l-.367-.21-3.765.862.879-3.668-.23-.377a9.835 9.835 0 01-1.503-5.074c0-5.43 4.417-9.847 9.856-9.847 5.438 0 9.855 4.417 9.855 9.847 0 5.43-4.417 9.84-9.855 9.84zm5.405-7.378c-.296-.149-1.754-.866-2.026-.965-.272-.099-.47-.148-.668.149-.197.297-.767.965-.94 1.163-.173.198-.346.223-.643.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.297-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- SLIDE-OUT CART DRAWER -->
+  <div id="cart-drawer-backdrop" class="drawer-backdrop" onclick="closeCartDrawer()"></div>
+  <div id="cart-drawer-panel" class="drawer-panel">
+    
+    <!-- Drawer Header -->
+    <div class="p-5 border-b border-neutral-200 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <h3 class="font-display text-lg font-black uppercase text-neutral-900">YOUR SHOPPING BAG</h3>
+        <span class="cart-count-badge bg-black text-white text-xs font-mono-code font-bold px-2 py-0.5 rounded-full">0</span>
+      </div>
+      <button onclick="closeCartDrawer()" class="p-2 text-neutral-400 hover:text-black transition-colors" title="Close bag">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+    </div>
+
+    <!-- Free Shipping Progress Threshold Meter -->
+    <div class="px-5 py-3 bg-neutral-100 border-b border-neutral-200">
+      <div id="free-shipping-text" class="text-xs font-mono-code text-neutral-700 mb-1.5 text-center">
+        Add more for <strong>FREE EXPRESS DELIVERY</strong>
+      </div>
+      <div class="w-full bg-neutral-300 h-1.5 rounded-full overflow-hidden">
+        <div id="free-shipping-bar" class="h-full bg-black transition-all duration-500 rounded-full" style="width: 0%"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items Scroll Area -->
+    <div id="cart-items-container" class="flex-1 overflow-y-auto p-5 space-y-2">
+      <!-- Injected dynamically -->
+    </div>
+
+    <!-- Empty State -->
+    <div id="cart-empty-state" class="hidden flex-1 flex flex-col items-center justify-center p-8 text-center">
+      <div class="w-16 h-16 rounded-full bg-neutral-100 flex items-center justify-center mb-4 text-black">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+      </div>
+      <h4 class="font-display text-base font-bold uppercase text-neutral-900 mb-1">Your bag is empty</h4>
+      <p class="text-xs font-mono-code text-neutral-500 mb-6">Explore our Men's and Women's footwear drops to find your fit.</p>
+      <button onclick="closeCartDrawer()" class="pill-btn text-xs">Explore Footwear</button>
+    </div>
+
+    <!-- Drawer Footer / Summary & Checkout -->
+    <div id="cart-summary-container" class="p-5 border-t border-neutral-200 bg-white space-y-4">
+      
+      <!-- Promo Code Field -->
+      <div class="flex gap-2">
+        <input 
+          id="promo-input" 
+          type="text" 
+          placeholder="DISCOUNT CODE (TRY 'CORE10')" 
+          class="flex-1 bg-neutral-100 border border-neutral-300 rounded-xl px-3 py-2 text-xs font-mono-code uppercase font-bold focus:outline-none focus:border-black"
+        />
+        <button onclick="applyPromoCode()" class="pill-btn py-2 px-4 text-xs">Apply</button>
+      </div>
+
+      <!-- Financial Breakdown -->
+      <div class="space-y-1.5 text-xs font-mono-code">
+        <div class="flex justify-between text-neutral-600">
+          <span>Subtotal</span>
+          <span id="cart-subtotal" class="font-bold text-neutral-900">Rs. 0.00</span>
+        </div>
+        <div id="cart-discount-row" class="flex justify-between text-black font-bold hidden">
+          <span>Promo Code (CORE10)</span>
+          <span id="cart-discount">-Rs. 0.00</span>
+        </div>
+        <div class="flex justify-between text-neutral-600">
+          <span>Estimated Shipping</span>
+          <span id="cart-shipping" class="font-bold text-neutral-900">FREE</span>
+        </div>
+        <div class="flex justify-between text-sm font-bold text-black pt-2 border-t border-neutral-200">
+          <span>Total</span>
+          <span id="cart-grand-total">Rs. 0.00</span>
+        </div>
+      </div>
+
+      <!-- Checkout Trigger -->
+      <button onclick="checkoutViaWhatsApp()" class="w-full py-4 bg-[#25D366] hover:bg-[#20ba59] text-white font-display text-sm font-bold uppercase tracking-wider rounded-2xl shadow-xl transition-all flex items-center justify-center gap-2">
+        <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24">
+          <path d="M12.004 0C5.372 0 0 5.373 0 12c0 2.115.548 4.103 1.512 5.836L.055 24l6.334-1.45A11.936 11.936 0 0012.004 24C18.628 24 24 18.627 24 12 24 5.373 18.628 0 12.004 0zm.015 21.84c-1.85 0-3.6-.502-5.12-1.373l-.367-.21-3.765.862.879-3.668-.23-.377a9.835 9.835 0 01-1.503-5.074c0-5.43 4.417-9.847 9.856-9.847 5.438 0 9.855 4.417 9.855 9.847 0 5.43-4.417 9.84-9.855 9.84zm5.405-7.378c-.296-.149-1.754-.866-2.026-.965-.272-.099-.47-.148-.668.149-.197.297-.767.965-.94 1.163-.173.198-.346.223-.643.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.297-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"/>
+        </svg>
+        <span>Checkout via WhatsApp</span>
+      </button>
+
+      <p class="text-[10px] font-mono-code text-center text-neutral-500 font-bold">
+        💬 DIRECT ORDER CONFIRMATION ON WHATSAPP • 14-DAY SIZE EXCHANGE
+      </p>
+    </div>
+
+  </div>
+
+  <!-- QUICK VIEW MODAL -->
+  <div id="quick-view-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-[#0a0a0a]/70 backdrop-blur-sm flex items-start sm:items-center justify-center p-0 sm:p-4">
+    <div class="relative w-full sm:max-w-4xl bg-white sm:rounded-3xl overflow-hidden shadow-2xl sm:my-8 border-0 sm:border-2 sm:border-neutral-200 min-h-screen sm:min-h-0 max-h-screen sm:max-h-[90vh] overflow-y-auto">
+      <button onclick="closeQuickView()" class="absolute top-3 right-3 z-20 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/90 hover:bg-black hover:text-white flex items-center justify-center text-neutral-900 transition-all shadow-md">
+        ✕
+      </button>
+      <div id="quick-view-content">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- CHECKOUT MODAL -->
+  <div id="checkout-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-[#0a0a0a]/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="relative w-full max-w-2xl bg-white rounded-3xl overflow-hidden shadow-2xl my-8 border border-neutral-200">
+      <div class="p-6 border-b border-neutral-200 flex justify-between items-center bg-neutral-100">
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-black"></span>
+          <h3 class="font-display text-lg font-bold uppercase text-neutral-900">SECURE CHECKOUT</h3>
+        </div>
+        <button onclick="closeCheckoutModal()" class="text-neutral-500 hover:text-black">✕</button>
+      </div>
+
+      <div id="checkout-modal-body" class="p-6 md:p-8">
+        <form onsubmit="processCheckoutOrder(event)" class="space-y-6">
+          
+          <div id="checkout-order-summary" class="bg-neutral-100 p-4 rounded-2xl border border-neutral-200">
+            <!-- Dynamic items summary -->
+          </div>
+
+          <!-- Customer & Shipping Form -->
+          <div>
+            <h4 class="font-display text-xs font-bold uppercase text-black mb-3 tracking-wider">1. SHIPPING ADDRESS</h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block text-[11px] font-mono-code font-bold uppercase text-neutral-700 mb-1">Full Name</label>
+                <input type="text" name="name" required placeholder="Alex Mercer" class="w-full bg-neutral-100 border border-neutral-300 rounded-xl px-3.5 py-2.5 text-xs font-sans focus:outline-none focus:border-black" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-mono-code font-bold uppercase text-neutral-700 mb-1">Phone Number</label>
+                <input type="tel" name="phone" required placeholder="+91 98765 43210" class="w-full bg-neutral-100 border border-neutral-300 rounded-xl px-3.5 py-2.5 text-xs font-sans focus:outline-none focus:border-black" />
+              </div>
+              <div class="sm:col-span-2">
+                <label class="block text-[11px] font-mono-code font-bold uppercase text-neutral-700 mb-1">Street Address</label>
+                <input type="text" name="address" required placeholder="Apartment, suite, street address" class="w-full bg-neutral-100 border border-neutral-300 rounded-xl px-3.5 py-2.5 text-xs font-sans focus:outline-none focus:border-black" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-mono-code font-bold uppercase text-neutral-700 mb-1">City</label>
+                <input type="text" name="city" required placeholder="Mumbai / Delhi / Bangalore" class="w-full bg-neutral-100 border border-neutral-300 rounded-xl px-3.5 py-2.5 text-xs font-sans focus:outline-none focus:border-black" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-mono-code font-bold uppercase text-neutral-700 mb-1">Postal Code</label>
+                <input type="text" name="postal" required placeholder="400001" class="w-full bg-neutral-100 border border-neutral-300 rounded-xl px-3.5 py-2.5 text-xs font-sans focus:outline-none focus:border-black" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Payment Options -->
+          <div>
+            <h4 class="font-display text-xs font-bold uppercase text-black mb-3 tracking-wider">2. SELECT PAYMENT MODE</h4>
+            <div class="grid grid-cols-2 gap-3">
+              <label class="border-2 border-neutral-300 rounded-2xl p-3.5 flex items-center gap-3 cursor-pointer hover:border-black transition-all bg-neutral-100">
+                <input type="radio" name="payment" value="prepaid-upi" checked class="accent-black" />
+                <div>
+                  <div class="font-display font-bold text-xs uppercase text-neutral-900">UPI / Cards (Prepaid)</div>
+                  <div class="text-[10px] font-mono-code text-black font-bold">10% OFF APPLIED</div>
+                </div>
+              </label>
+
+              <label class="border border-neutral-300 rounded-2xl p-3.5 flex items-center gap-3 cursor-pointer hover:border-black transition-all">
+                <input type="radio" name="payment" value="cod" class="accent-black" />
+                <div>
+                  <div class="font-display font-bold text-xs uppercase text-neutral-900">Cash on Delivery</div>
+                  <div class="text-[10px] font-mono-code text-neutral-500">Pay at your doorstep</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Submit Order -->
+          <button type="submit" class="w-full py-4 bg-black hover:bg-neutral-800 text-white font-display text-sm font-bold uppercase tracking-wider rounded-2xl shadow-xl transition-all">
+            Confirm & Place Order
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- REEL LOOKBOOK MODAL -->
+  <div id="reel-modal" class="hidden fixed inset-0 z-50 bg-[#0a0a0a]/85 backdrop-blur-md flex items-center justify-center p-4" onclick="closeReelModal()">
+    <div id="reel-modal-container" onclick="event.stopPropagation()">
+      <!-- Populated dynamically by app.js -->
+    </div>
+  </div>
+
+  <!-- SEARCH DRAWER / MODAL -->
+  <div id="search-drawer" class="hidden fixed inset-0 z-50 bg-[#0a0a0a]/60 backdrop-blur-sm flex items-start justify-center pt-20 px-4" onclick="closeSearchDrawer()">
+    <div class="relative w-full max-w-2xl bg-white rounded-3xl overflow-hidden shadow-2xl p-6 border-2 border-neutral-200" onclick="event.stopPropagation()">
+      <div class="flex items-center gap-3 border-b border-neutral-200 pb-4">
+        <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        <input 
+          id="search-input" 
+          type="text" 
+          placeholder="SEARCH SILHOUETTE, STYLE, MEN, WOMEN..." 
+          oninput="handleSearch(this.value)"
+          class="flex-1 text-sm font-mono-code uppercase font-bold focus:outline-none placeholder-neutral-400 text-neutral-900"
+        />
+        <button onclick="closeSearchDrawer()" class="text-neutral-400 hover:text-black">✕</button>
+      </div>
+
+      <!-- Quick Tags -->
+      <div class="flex gap-2 py-3 border-b border-neutral-100 overflow-x-auto text-[11px] font-mono-code">
+        <span class="text-black uppercase font-bold self-center">Trending:</span>
+        <button onclick="handleSearch('fat-lace')" class="bg-neutral-100 hover:bg-neutral-200 text-black px-3 py-1 rounded-full font-bold">Fat Lace</button>
+        <button onclick="handleSearch('oldskool')" class="bg-neutral-100 hover:bg-neutral-200 text-black px-3 py-1 rounded-full font-bold">Canvas Skate</button>
+        <button onclick="handleSearch('air-stride')" class="bg-neutral-100 hover:bg-neutral-200 text-black px-3 py-1 rounded-full font-bold">Air Stride</button>
+        <button onclick="handleSearch('chelsea')" class="bg-neutral-100 hover:bg-neutral-200 text-black px-3 py-1 rounded-full font-bold">Boots</button>
+        <button onclick="handleSearch('platform')" class="bg-neutral-100 hover:bg-neutral-200 text-black px-3 py-1 rounded-full font-bold">Platform</button>
+      </div>
+
+      <div id="search-results" class="max-h-80 overflow-y-auto mt-2 divide-y divide-blue-50">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- SIZE GUIDE MODAL -->
+  <div id="size-guide-modal" class="hidden fixed inset-0 z-50 bg-[#0a0a0a]/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="relative w-full max-w-xl bg-white rounded-3xl overflow-hidden shadow-2xl p-6 md:p-8 border-2 border-neutral-200">
+      <div class="flex justify-between items-center mb-6">
+        <div>
+          <h3 class="font-display text-xl font-black uppercase text-neutral-900">FOOTWEAR SIZING CHART</h3>
+          <p class="text-xs font-mono-code text-black uppercase mt-0.5 font-bold">Accurate conversions for Men & Women</p>
+        </div>
+        <button onclick="closeSizeGuide()" class="text-neutral-400 hover:text-black text-lg">✕</button>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-xs font-mono-code text-left border-collapse">
+          <thead>
+            <tr class="bg-neutral-100 border-b border-neutral-300 text-black uppercase font-bold">
+              <th class="p-2.5">UK Size</th>
+              <th class="p-2.5">EU Size</th>
+              <th class="p-2.5">US Men</th>
+              <th class="p-2.5">US Women</th>
+              <th class="p-2.5">Foot Length (CM)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-blue-100">
+            <tr><td class="p-2.5 font-bold">UK 3</td><td class="p-2.5">EU 36</td><td class="p-2.5">-</td><td class="p-2.5 font-bold text-black">US 5</td><td class="p-2.5">22.5 cm</td></tr>
+            <tr><td class="p-2.5 font-bold">UK 4</td><td class="p-2.5">EU 37</td><td class="p-2.5">-</td><td class="p-2.5 font-bold text-black">US 6</td><td class="p-2.5">23.5 cm</td></tr>
+            <tr><td class="p-2.5 font-bold">UK 5</td><td class="p-2.5">EU 38</td><td class="p-2.5">-</td><td class="p-2.5 font-bold text-black">US 7</td><td class="p-2.5">24.2 cm</td></tr>
+            <tr><td class="p-2.5 font-bold">UK 6</td><td class="p-2.5">EU 39 / 40</td><td class="p-2.5">US 6.5</td><td class="p-2.5 font-bold text-black">US 8</td><td class="p-2.5">25.0 cm</td></tr>
+            <tr><td class="p-2.5 font-bold">UK 7</td><td class="p-2.5">EU 41</td><td class="p-2.5 font-bold text-black">US 7.5</td><td class="p-2.5">US 9</td><td class="p-2.5">25.8 cm</td></tr>
+            <tr><td class="p-2.5 font-bold">UK 8</td><td class="p-2.5">EU 42</td><td class="p-2.5 font-bold text-black">US 8.5</td><td class="p-2.5">US 10</td><td class="p-2.5">26.6 cm</td></tr>
+            <tr><td class="p-2.5 font-bold">UK 9</td><td class="p-2.5">EU 43</td><td class="p-2.5 font-bold text-black">US 9.5</td><td class="p-2.5">-</td><td class="p-2.5">27.5 cm</td></tr>
+            <tr><td class="p-2.5 font-bold">UK 10</td><td class="p-2.5">EU 44 / 45</td><td class="p-2.5 font-bold text-black">US 10.5</td><td class="p-2.5">-</td><td class="p-2.5">28.3 cm</td></tr>
+            <tr><td class="p-2.5 font-bold">UK 11</td><td class="p-2.5">EU 46</td><td class="p-2.5 font-bold text-black">US 11.5</td><td class="p-2.5">-</td><td class="p-2.5">29.1 cm</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-4 p-3 bg-neutral-100 rounded-xl text-[11px] font-mono-code text-neutral-800 border border-neutral-200">
+        💡 <strong>Pro Sizing Tip:</strong> For chunky boots & runners, if you are between sizes, we recommend sizing up by half/one size for comfortable toe box space.
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- SCRIPTS -->
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    function filterByGenderNav(gender) {
+      const tab = document.querySelector(`.gender-tab[data-gender="${gender}"]`);
+      if (tab) tab.click();
+      closeMobileNav();
+    }
+    function closeMobileNav() {
+      const mobileNav = document.getElementById('mobile-nav-panel');
+      if (mobileNav) mobileNav.classList.add('hidden');
+    }
+  
+    function toggleHeroEntrySound() {
+      const vid = document.getElementById('hero-entry-video');
+      const iconMuted = document.getElementById('hero-sound-icon-muted');
+      const iconUnmuted = document.getElementById('hero-sound-icon-unmuted');
+      const label = document.getElementById('hero-sound-label');
+      if (!vid) return;
+      vid.muted = !vid.muted;
+      if (vid.muted) {
+        if (iconMuted) iconMuted.classList.remove('hidden');
+        if (iconUnmuted) iconUnmuted.classList.add('hidden');
+        if (label) label.textContent = 'UNMUTE';
+      } else {
+        if (iconMuted) iconMuted.classList.add('hidden');
+        if (iconUnmuted) iconUnmuted.classList.remove('hidden');
+        if (label) label.textContent = 'MUTE';
+      }
+    }
+  </script>
+</body>
+</html>
+
+
